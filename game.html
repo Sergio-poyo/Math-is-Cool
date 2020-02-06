@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link href="mathcool.css" rel="stylesheet" type="text/css">
+        <td style="color:#00FF00; background-color:sienna;">
+        <meta charset="utf-8">
+        <script>
+            function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('txt').innerHTML =
+            h + ":" + m + ":" + s;
+            var t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+            if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+            return i;
+            }
+        </script>
+        <title>Coolest Maths</title>
+    </head>
+    <body>
+        <h0><a href="Home.html">Math is Cool!</a></h0>
+        <p1 id="txt" style="color:F8F8F2;"></p1>
+        <h1>Amberial</h1>
+        <embed  width="800" height="600" base="https://external.kongregate-games.com/gamez/0000/8414/live/" src="https://external.kongregate-games.com/gamez/0000/8414/live/embeddable_8414.swf" type="application/x-shockwave-flash" style="align: center;"></embed><br/>Play free games at <a href="https://www.kongregate.com/">Kongregate</a>
+    </body>
+</html>

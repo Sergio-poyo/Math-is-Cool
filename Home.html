@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="mathcool.css" rel="stylesheet" type="text/css">
+        <td style="color:#00FF00; background-color:sienna;">
+        <meta charset="utf-8">
+        <script>
+            function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('txt').innerHTML =
+            h + ":" + m + ":" + s;
+            var t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+            if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+            return i;
+            }
+        </script>
+        <title>Coolest Maths</title>
+    </head>
+    <body>
+        <body onload="startTime()">
+
+        
+        <h0><a href="Home.html">Math is Cool!</a></h0>
+        <p1 id="txt" style="color:F8F8F2;"></p1>
+        
+        
+        <div style="display: block; background-color:">
+        <h2>Prepare youself for MATH!</h2>
+        
+        <p1>We will learn algebra, where we will solve for x, learn about imaginary
+        numbers (which are very real) and more!
+        <br/>
+        <br/>
+        Derive formulas using product rules in simple example problems,
+        we're only getting started. Let's move onto integrals!</p1>
+        </div>
+
+
+        <h1>Math Courses</h1>
+        <h2>Algebra</h2>
+        <p1><a href="algebra_imno.html">Intro to Imaginary Numbers</a></p1>
+        
+        <h2>Calculus</h2>
+        <p1><a href="calculus_integral.html">What is an Integral?</a></p1>
+       
+       <h2 style="color: #F92672;">
+           <a href="game.html">Play Our Game!</a>
+       </h2> 
+        
+        <h2>Learn more about the author!</h2>
+        <img src="Selfie.png" width="150" height="160"></img>
+        </br>
+        <p1>Hi! I'm Martin Lebowski, and I am a professor specializing in math at Princeton University.
+        </br>I work under public relations for Code HS, to visit our website, go <a href="https://codehs.com">here!</a></p1>
+    </body>
+</html>

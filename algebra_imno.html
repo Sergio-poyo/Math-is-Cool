@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html
+    <head>
+        <link href="mathcool.css" rel="stylesheet" type="text/css">
+        <td style="color:#00FF00; background-color:sienna;">
+        <meta charset="utf-8">
+        <script>
+            function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('txt').innerHTML =
+            h + ":" + m + ":" + s;
+            var t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+            if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+            return i;
+            }
+        </script>
+        <title>Coolest Maths</title>
+    </head>
+    <body>
+        <h1><a href="Home.html">Math is Cool!</a></h1>
+        <p1 id="txt" style="color:F8F8F2;"></p1>
+        <h1>Algebra</h1>
+        <h2>Intro to Imaginary Numbers</h2>
+        <h3>What are Imaginary Numbers?</h3>
+        
+        <p1>Imaginary numbers are literally defined as i=sqrt(-1)</p1><br/><br/>
+        <p1>When you multiply i by another number, can you guess what happens?</p1><br/><br/>
+        <p1>If we add the exponents, we get (-1)^1, which is just 1!</p1><br/>
+        <p1>Repeat this process, and we now have i*-1 = -i = i^3</p1><br/>
+        <p1>Do it again at i^4, we end up with 1. i*-i = -i^2 = 1</p1><br/>
+        <p1>Finally, at i^5, we just get i again! i*1 = i. Do you know why this is so?</p1><br/>
+        <br/>
+        <h3>Let's get real for a bit.</h3>
+        <p1>We know what i is, but do we know why i is?</p1>
+        
+    </body>
+</html>>

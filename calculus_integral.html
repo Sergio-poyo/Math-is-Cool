@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="mathcool.css" rel="stylesheet" type="text/css">
+        <td style="color:#00FF00; background-color:sienna;">
+        <meta charset="utf-8">
+        <script>
+            function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('txt').innerHTML =
+            h + ":" + m + ":" + s;
+            var t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+            if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+            return i;
+            }
+        </script>
+        <title>Coolest Maths</title>
+    </head>
+    <body>
+        <h1><a href="Home.html">Math is Cool!</a></h1>
+        <p1 id="txt" style="color:F8F8F2;"></p1>
+        <h1>Calculus</h1>
+        <h2>Intro to Integration</h2>
+        <h3>What can integrals do?</h3>
+        
+        <p1>Integrals help us find the area of sections under a graph!</p1><br/><br/>
+        <p1>Let's look at the graph of y=2x</p1><br/><br/>
+        <p1>What do you notice about it? Can you guess what the area under it will be?</p1><br/>
+        <p1>Using the formula y=x^2, we find the area under the graph of this equation!</p1><br/>
+        <p1>Now how about y=4?</p1><br/>
+        <p1>Notice that it has a rectangular shape in relation to the x-axis.</p1><br/>
+        <br/>
+        <h3>Let's try and integrate some rules into our heads.</h3>
+        <p1>Integrals have sets of rules, and using these rules we are able to integrate any function!</p1>
+        
+    </body>
+</html>>
